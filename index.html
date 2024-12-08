@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-div">
+        <h1 id="title">SURVEY FORM</h1>
+    <p id="description">Give your Openion which course you like </p>
+    <form id="survey-form">
+        <label id="name-label"> Enter your name </label>  <br>
+            <input class="set"  type="text" id="name" required placeholder="admin" > <br>
+        <label id="email-label"> Enter your email </label> <br>
+            <input class="set" type="email" id="email" required placeholder="admin@gmail.com" > <br>
+        <label id="number-label"> Enter your age   </label> <br>
+            <input class="set" type="number" id="number" required min="18" max="60" placeholder="20" value="age"> <br>
+        <label> Which course you like <br></label>
+        <select  id="dropdown" class="set" >
+            <option value="">Web develpment</option>
+            <option value="">Software develpment</option>
+            <option value="">Machine lerning</option>
+        </select> <br>
+        <label> Gender  <br>
+            <input type="radio" value="male" name="Gender"> Male <br>
+            <input type="radio" value="female" name="Gender"> Female
+        </label> <br>
+        
+        <input type="checkbox" value="Agree" > Terms & conditions <br>
+        <input type="checkbox" value="Acept" > Recive Notifictions <br>
+       <label>Type your suggession here</label> <br>
+        <textarea class="set"></textarea> <br>
+        <button id="submit" type="submit">Submit</button>
+
+    </form>
+    </div>
+</body>
+</html>
